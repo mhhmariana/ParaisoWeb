@@ -7,7 +7,6 @@
 - [Uso](#uso)
 - [Funcionalidades](#funcionalidades)
 - [Requisitos](#requisitos)
-- [Contribución](#contribución)
 - [Equipo](#equipo)
 - [Licencia](#licencia)
  
