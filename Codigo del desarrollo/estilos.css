@@ -1,0 +1,240 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estructura principal */
+body {
+  color: #333;
+}
+
+header {
+  background-color: #FFD700;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 10px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background: url('dog-hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero button {
+  background-color: #333;
+  color: #FFD700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+
+/* Botones para abrir los modales */
+.btn-modal {
+background-color: #FFD700;
+color: #333;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1em;
+transition: background-color 0.3s;
+}
+
+.btn-modal:hover {
+background-color: #333;
+color: #FFD700;
+}
+
+/* Estilos para el modal */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+background-color: #FFD700;
+margin: 10% auto;
+padding: 30px;
+border-radius: 15px;
+width: 90%;
+max-width: 400px;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal h3 {
+color: #333;
+margin-bottom: 20px;
+}
+
+.modal-form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.modal-form label {
+font-size: 1em;
+color: #333;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="email"],
+.modal-form input[type="password"] {
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #ccc;
+outline: none;
+transition: border-color 0.3s;
+}
+
+
+.modal-form input:focus {
+border-color: #333;
+}
+
+.modal-form button {
+background-color: #333;
+color: #FFD700;
+padding: 10px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.1em;
+}
+
+.modal-form button:hover {
+background-color: #FFD700;
+color: #333;
+}
+
+/* Botón de cerrar modal */
+.close {
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 1.5em;
+cursor: pointer;
+color: #333;
+}
+
+/* Estilos de botones de Inicio sesion y Registrarse */
+.auth-buttons button {
+  padding: 10px 20px; /* Mayor espacio interno */
+  background-color: #ffc107; /* Color amarillo */
+  border: 1px solid #e0a800; /* Borde negro */
+  border-radius: 10px; /* Bordes más curvados */
+  color: #000; /* Texto negro */
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px; /* Aumentar tamaño de fuente */
+  transition: background-color 0.5s, border-color 0.5s; /* Añadir transición al borde */
+}
+
+.auth-buttons button:hover {
+  background-color: #e0a800; /* Color al pasar el mouse */
+  border-color: #110d03; /* Cambiar color del borde al pasar el mouse */
+}
+
+/* Estilos de modales */
+.modal-content {
+  background-color: #ffc107; /* Fondo claro para el modal */
+  width: 350px; /* Aumentar ancho del modal */
+  padding: 30px; /* Mayor espacio interno */
+  border-radius: 12px; /* Bordes curvados */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  position: relative;
+  animation: fadeIn 0.8s;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  text-align: center; /* Centrar título */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo de botones dentro de los modales */
+.modal-content form button {
+  width: 100%;
+  padding: 12px; /* Mayor espacio interno */
+  background-color: #ffc107; /* Color amarillo */
+  border: 1px solid #e0a800; /* Borde negro */
+  border-radius: 10px; /* Bordes curvados */
+  color: #000; /* Texto negro */
+  font-weight: bold;
+  margin-top: 20px; /* Espacio superior */
+  cursor: pointer;
+  font-size: 16px; /* Aumentar tamaño de fuente */
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+.modal-content form button:hover {
+  background-color: #e0a800; /* Color al pasar el mouse */
+  border-color: #110d03; /* Cambiar color del borde al pasar el mouse */
+}
+
+/* Botón de cerrar modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
